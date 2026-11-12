@@ -14,7 +14,7 @@ export default function Navbar() {
   const { lang, setLang, t } = useLang()
   const [open, setOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
